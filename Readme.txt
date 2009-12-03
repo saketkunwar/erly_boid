@@ -42,7 +42,9 @@ execute install.bat(windows) from src directory
 running
 ---------
 start the applet with appletviewer i.e >
-appletviewer view_boid.html
+appletviewer -J-Djava.security.policy=java.policy.applet view_boid.html
+or
+run applet_start.bat(windows) from bin directory
 
 run the erlang function boid:start(numberofboids::integer) in a distributed
 node i.e erl -sname client (it's necessary to use a distributed node with the shortname)
